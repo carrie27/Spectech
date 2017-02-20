@@ -1,0 +1,25 @@
+%inline-block {
+	display: inline-block;
+}
+
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+@mixin border-radius($value) {
+	-webkit-border-radius: $value;
+     -moz-border-radius: $value;
+      -ms-border-radius: $value;
+          border-radius: $value;
+}
+@mixin transition($value...) {
+	-webkit-transition: $value;
+     -moz-transition: $value;
+      -ms-transition: $value;
+          transition: $value;
+}
+
+

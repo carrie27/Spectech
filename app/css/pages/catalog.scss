@@ -1,0 +1,131 @@
+.contact {
+	background: #000;
+	padding: 45px 0px;
+}
+.contact__title,  {
+	float: left;
+	padding-top: 5px;
+}
+.contact__btn-link {
+	padding: 15px 20px;
+	background: $yellow;
+	text-decoration: none;
+	color: #202e3b;
+	font-size: 18px;
+	font-weight: 700;
+	display: block;
+	float: right;
+}
+.title {
+	font-size: 26px;
+	color: $yellow;
+	margin-right: 20px;
+}
+.text {
+	font-size: 16px;
+	color: #fff;
+}
+.catalog__list {
+	@extend %clearfix;
+	margin: 0 -2%;
+}
+.catalog__item {
+	@extend %clearfix;
+	float: left;
+	width: 47%;
+	margin-left: 2%;
+	margin-top: 20px;
+	background-color: #fff;
+}
+.catalog__img {
+	float: left;
+	width: 40%;
+	position: relative;
+	height: 165px;
+}
+.catalog__desc {
+	float: left;
+	width: 60%;
+}
+.catalog__pic {
+	position: absolute;
+	top: 0;left: 0;right: 0;bottom: 0;
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+}
+.catalog__title, .catalog__price {
+	display: block;
+	text-align: center;
+}
+.catalog__title {
+	font-size: 26px;
+	color: #313343;
+	margin: 25px 30px;
+}
+.catalog__price {
+	font-size: 18px;
+	font-weight: 700;
+	color: #f0a829;
+}
+.special-offers {
+	margin-bottom: 50px;
+}
+.sales__list {
+	@extend %clearfix;
+	margin: 0 -3%;
+}
+.sales__item {
+	float: left;
+	width: 29.4%;
+	background-color: #fff;
+	padding: 25px 30px 35px 30px;
+	margin-left: 3%;
+}
+.sales__img {
+	position: relative;
+	height: 150px;
+	margin-bottom: 35px;
+}
+.sales__pic {
+	position: absolute;
+	top: 0;left: 0;right: 0;bottom: 0;
+	margin: auto;
+}
+.sales__title {
+	font-size: 21px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 30px;
+}
+.sales__price {
+	font-size: 22px;
+	font-weight: 700;
+	color: #000;
+	float: right;
+}
+.ex__price {
+	font-size: 22px;
+	font-weight: 700;
+	color: #d12222;
+	text-decoration: line-through;
+}
+.price {
+	margin-bottom: 25px;
+}
+.sales__btn {
+	@extend %clearfix;
+}
+.rent, .question {
+	display: block;
+	float: left;
+	padding: 10px 13px;
+	font-size: 17px;
+	color: #fff;
+}
+.rent {
+	background-color: #f3c331;
+}
+.question {
+	background-color: #354b60;
+}

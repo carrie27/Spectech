@@ -1,0 +1,116 @@
+.contacts {
+	min-height: 105px;
+	background-image: url("../image/bg/contacts-fon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 30px;
+}
+.contact__map {
+	background-color: $light;
+	padding-top: 40px;
+}
+#map__block {
+	float: left;
+	width: 620px;
+	height: 506px;
+}
+.form__block {
+	float: right;
+	width: 30%;
+	margin-left: 20px;
+	position: relative;
+	margin-bottom: 50px;
+}
+.phone, .email {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.phone {
+	padding-left: 40px;
+		&:before {
+	content: "";
+	display: block;
+	background: url("../image/icons/contacts-form-phone.png");
+	width: 20px;height: 20px;
+	position: absolute;
+	top: 0;left: 0;
+	}
+}
+.email {
+	position: relative;
+	padding-left: 40px;
+	&:before {
+	content: "";
+	display: block;
+	background: url("../image/icons/contacts-form-mail.png");
+	width: 23px;height: 17px;
+	position: absolute;
+	top: 20%;left: 0;
+	}
+}
+.contacts-review {
+	 padding-top: 40px;
+}
+.contacts-review__heading {
+	font-weight: 700;
+	font-size: 26px;
+	color: #202e3b;
+}
+.contacts-review__list {
+	@extend %clearfix;
+	margin-bottom: 70px;
+}
+.contacts-review__item {
+	float: left;
+	width: 22%;
+	margin-left: 2%;
+		&:first-child {
+			margin-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+		}
+}
+.contacts-review__img {
+	width: 120px;
+	height: 120px;
+	margin: auto;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.contacts-review__pic {
+	width: 100%;
+	height: 100%;
+}
+.contacts-review__text {
+	font-size: 14px;
+	color: #202e3b;
+	text-align: center;
+}
+.contacts-review__title {
+	font-weight: 700;
+	font-size: 14px;
+	color: #202e3b;
+	text-align: center;
+	display: block;
+}
+.form__title {
+	font-size: 16px;
+}
+.contacts__form-name, .contacts__form-phone {
+	width: 100%;
+	padding: 10px;
+}
+.contacts__form-text {
+	width: 100%;
+}
+.contacts__form-btn {
+	width: 100%;
+	background: #354b60;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px;
+}

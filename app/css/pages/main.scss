@@ -1,0 +1,283 @@
+.header {
+	min-height: 75px;
+	background-color: $yellow;
+	@extend %clearfix;
+}
+.logo__block {
+	float: left;
+	width: 25%;
+	padding-top: 10px;
+}
+.logo__title {
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+	vertical-align: middle;
+}
+.logo__img {
+	vertical-align: middle;
+}
+.menu__block {
+	float: right;
+	width: 71%;
+} 
+.menu__list {
+	@extend %clearfix;
+}
+.menu__item {
+	float: left;
+}
+.menu__link {
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	display: block;
+	padding: 20px 30px 20px 25px;
+		&:hover {
+			background-color: $lightyellow;
+		}
+}
+.page__gradient {
+	width: 100%;
+	height: 15px;
+	background: repeating-linear-gradient(-45deg, $yellow, $yellow 10px, #000 5px, #000 18px);
+}
+.promo {
+	min-height: 461px;
+	background-image: url("../image/bg/promo-fon.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;	
+}
+.promo-fon {
+	min-height: 461px;
+	padding-top: 135px;
+		background-color: rgba(32, 46, 59, .6);
+}
+.promo__heading {
+	font-size: 44px;
+	font-weight: 700;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+.promo__text {
+	font-size: 20px;
+	color: #e1e1e1;
+	text-align: center;
+	display: block;
+	margin-bottom: 35px;
+}
+.promo__btn {
+	display: inline-block;
+	font-weight: 700;
+	font-size: 16px;
+	color: #e1e1e1;
+	padding: 15px 70px 15px 15px;
+	border: 2px solid $yellow;
+	margin-left: 350px;
+	position: relative;
+		&:after {
+			content: "";
+			display: block;
+			background: url("../image/icons/btn-arrow.png");
+			width: 13px;
+			height: 19px;
+			position: absolute;
+			top: 35%;left: 85%;
+		}
+}
+.consult__form {
+	min-height: 180px;
+	background-color: $grey;
+	padding-top: 35px;
+	padding-bottom: 40px;
+}
+.consult__title {
+	font-size: 24px;
+	color: $yellow;
+	margin-bottom: 35px;
+}
+.consult__form-name, .consult__form-phone, .consult__form-select {
+	padding: 15px;
+	background: $grey;
+	font-size: 16px;
+	color: #fff;
+	outline: none;
+	border: 1px solid $yellow;
+	margin-left: 10px;
+}
+.consult__form-name {
+	margin-left: 0;
+}
+.consult__form-btn {
+	padding: 15px;
+	background: $yellow;
+	font-weight: 700;
+	color: $grey;
+	margin-left: 7px;
+}
+.advantages {
+	min-height: 135px;
+	padding-top: 45px;
+	padding-bottom: 45px;
+}
+.advantages__list {
+	@extend %clearfix;
+	margin: 0 -1%;
+}
+.advantages__item {
+	float: left;
+	width: 24%;
+	margin-left: 1%;
+	@extend %clearfix;
+}
+.advantages__img {
+	float: left;
+	width: 20%;
+	height: 50px;
+	position: relative;
+}
+.advantages__pic {
+	position: absolute;
+	top: 0;left: 0;right: 0;bottom: 0;
+	margin: auto;
+}
+.advantages__text {
+	display: block;
+	float: left;
+	width: 71%;
+	font-size: 13px;
+	color: #000;
+	margin-left: 20px;
+}
+.allTechnic {
+	min-height: 400px;
+	background-color: $light;
+	@extend %clearfix;
+	padding-top: 50px;
+}
+.technics {
+	float: left;
+	width: 20%;
+	margin-bottom: 55px;
+}
+.tech-menu__item {
+	margin-bottom: 25px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+}
+.tech-menu__link {
+	font-size: 16px;
+	color: $grey;
+	text-decoration: underline;
+}
+.sales {
+	float: right;
+	width: 70%;
+	margin-left: 55px;
+}
+table {
+	border: none;
+	width: 100%;
+	text-align: left;
+}
+td, th {
+	padding: 10px;
+}
+tr:nth-child(even) {
+	background-color: $light;
+}
+tr:nth-child(odd) {
+	background-color: #fff;
+}
+th {
+	background-color: #dfdfdf;
+	font-weight: 700;
+	font-size: 16px;
+}
+td {
+	font-size: 16px;
+}
+.stat-review {
+	min-height: 435px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: $grey;
+	@extend %clearfix;
+}
+.stat {
+	float: left;
+	width: 30%;
+}
+.reviews {
+	float: left;
+	width: 65%;
+	margin-left: 40px;
+}
+.stat__title {
+	font-weight: 700;
+	font-size: 26px;
+	color: #fff;
+	margin-bottom: 35px;
+}
+.stat__title_reg {
+	font-weight: 400;
+}
+.stat__num {
+	font-weight: 700;
+	font-size: 38px;
+	color: $yellow;
+}
+.stat__text {
+	font-weight: 700;
+	font-size: 18px;
+	color: #dedede;
+	margin-left: 20px;
+}
+.review__block {
+	@extend %clearfix;
+	margin-bottom: 40px;
+}
+.text__block {
+	float: left;
+	width: 75%;
+	margin-left: 20px;
+}
+.review__text {
+	font-size: 18px;
+	font-style: italic;
+	color: #fff;
+	margin: 0;
+}
+.review__title {
+	font-weight: 700;
+	font-size: 18px;
+	color: $yellow;
+}
+.img__block {
+	width: 120px;
+	height: 120px;
+	border: 2px solid $yellow;
+	border-radius: 4px;
+	float: left;
+
+}
+.review__img {
+	width: 100%;
+	height: 100%;
+}
+#map {
+	height: 500px;
+	width: 100%;
+}
+.logo__title_footer {
+	color: $yellow;
+}
+.menu__link_footer {
+	color: #fff;
+		&:hover {
+			color: $yellow;
+			background-color: $grey;
+		}
+}

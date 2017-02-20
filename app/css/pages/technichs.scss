@@ -1,0 +1,101 @@
+.technichs__promo {
+	@extend %clearfix;
+	min-height: 190px;
+	background: url('../image/bg/technichs-fon.jpg') no-repeat;
+	background-size: cover;
+}
+.contact__title-tech {
+	float: left;
+	width: 60%;
+}
+.technichs__promo_text {
+	display: block;
+	font-size: 16px;
+	color: #fff;
+}
+.contact__btn {
+	float: right;
+	width: 30%;
+}
+.tech__btn {
+	margin-bottom: 20px;
+}
+.contact__btn_text {
+	font-size: 16px;
+	color: #fff;
+}
+.tech-catalog {
+	background-color: $light;
+	@extend %clearfix;
+	padding-top: 30px;
+}
+.tech__nav {
+	position: absolute;
+	width: 30%;
+	top: 0;left: 0;
+}
+.tech__list {
+	@extend %clearfix;
+	margin: 0 -1% 0 -3%;
+}
+.tech__item {
+	float: left;
+	width: 30%;
+	padding: 25px;
+	background-color: #fff;
+	margin-bottom: 20px;
+	margin-left: 3%;
+		&:first-child {
+			margin-left: 36.2%;
+		}
+}
+.nav__title {
+	margin-bottom: 20px;
+}
+.nav__title-text {
+	font-weight: 700;
+	font-size: 26px;
+	vertical-align: middle;
+}
+.nav__title-img {
+	vertical-align: middle;
+}
+.tech__nav-link {
+	display: block;
+	font-size: 16px;
+	color: #354b60;
+	text-decoration: underline;
+	padding: 10px;
+	 &:hover {
+	 	background-color: #f3c331;
+	 	font-weight: 700;
+	 	color: #fff;
+	 }
+}
+.download {
+	display: block;
+	background-color: #354b60;
+	font-size: 16px;
+	color: #fff;
+	padding: 10px 20px 10px 40px;
+	position: relative;
+		&:before {
+			content: "";
+			display: block;
+			background: url("../image/icons/download-icon.png");
+			width: 17px;
+			height: 18px;
+			position: absolute;
+			top: 30%;left: 5%;
+		}
+}
+.tech__price {
+	font-size: 22px;
+	font-weight: 700;
+	color: #000;
+	text-align: left;
+	margin-bottom: 25px;
+}
+.rent_tech, .question_tech {
+	padding: 10px 18px;
+} 
